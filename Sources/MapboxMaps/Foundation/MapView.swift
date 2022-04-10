@@ -71,7 +71,7 @@ open class MapView: UIView {
     }
 
     /// The underlying metal view that is used to render the map
-    internal private(set) var metalView: MTKView?
+    public var metalView: MTKView?
 
     private let cameraViewContainerView = UIView()
 
@@ -644,7 +644,7 @@ extension MapView: DelegatingMapClientDelegate {
         fatalError("scheduleTask is not supported")
     }
 
-    internal func getMetalView(for metalDevice: MTLDevice?) -> MTKView? {
+    func getMetalView(for metalDevice: MTLDevice?) -> MTKView? {
         let metalView = dependencyProvider.makeMetalView(frame: bounds, device: metalDevice)
         displayCallback = {
             metalView.setNeedsDisplay()

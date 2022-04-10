@@ -18,7 +18,7 @@ internal final class DelegatingMapClient: MapClient, MBMMetalViewProvider {
         delegate?.scheduleTask(forTask: task)
     }
 
-    internal func getMetalView(for metalDevice: MTLDevice?) -> MTKView? {
+    func getMetalView(for metalDevice: MTLDevice?) -> MTKView? {
         return delegate?.getMetalView(for: metalDevice)
     }
 }
