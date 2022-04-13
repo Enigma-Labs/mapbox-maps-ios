@@ -4,6 +4,9 @@ Mapbox welcomes participation and contributions from everyone.
 
 ## main
 
+* Add support for runtime source properties. ([#1267](https://github.com/mapbox/mapbox-maps-ios/pull/1267))
+* Start location services lazily. ([#1262](https://github.com/mapbox/mapbox-maps-ios/pull/1262))
+
 ## 10.5.0-beta.1 - April 7, 2022
 
 * Mitigate `OfflineRegionManager.mergeOfflineDatabase(for:completion)` throwing `TypeConversionError.unexpectedType` on a successfull merge. Introduce `OfflineRegionManager.mergeOfflineDatabase(forPath:completion)` as the correct way to merge offline database. ([#1192](https://github.com/mapbox/mapbox-maps-ios/pull/1192))
@@ -29,6 +32,16 @@ Mapbox welcomes participation and contributions from everyone.
 * API for using globe projection has been moved to `Style.setProjection(_:)` and `Style.projection` and is no longer experimental. ([#1235](https://github.com/mapbox/mapbox-maps-ios/pull/1235))
 * Add `OfflineRegion.getStatus(completion:)`. ([#1239](https://github.com/mapbox/mapbox-maps-ios/pull/1239))
 * Add a prefix `maps-ios` to all Log message's category. ([#1250](https://github.com/mapbox/mapbox-maps-ios/pull/1250)))
+
+## 10.4.3 - April 13, 2022
+
+* Update to MapboxCommon 21.2.1. ([#1271](https://github.com/mapbox/mapbox-maps-ios/pull/1271))
+* Start location services lazily. ([#1262](https://github.com/mapbox/mapbox-maps-ios/pull/1262))
+
+## 10.4.2 - April 7, 2022
+
+* Update to MapboxCoreMaps 10.4.2 ([#1256](https://github.com/mapbox/mapbox-maps-ios/pull/1256))
+* Add `OfflineRegion.getStatus(completion:)`. ([#1239](https://github.com/mapbox/mapbox-maps-ios/pull/1239))
 
 ## 10.4.1 - March 28, 2022
 
